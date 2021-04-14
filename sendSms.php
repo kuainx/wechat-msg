@@ -12,7 +12,7 @@ $url = 'https://api.weixin.qq.com/cgi-bin/message/template/send?access_token=' .
 $data = '{
            "touser":"' . base16_decode($_GET['code']) . '",
            "template_id":"LaDYp94JDdbADjruFQBlntVIK3yGKMYuU-XD3UNdV2U",
-           "url":"https://api.lifestudio.cn/show.php?data=' . $_GET['data'] . '"
+           "url":"https://api.lifestudio.cn/show.php?data=' . $_GET['data'] . '",
            "data":{
                "first": {
                    "value":"' . $_GET['first'] . '",
