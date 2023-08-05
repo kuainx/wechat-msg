@@ -6,4 +6,4 @@ if (empty($_GET['code'])) {
 include('./util.php');
 include('./config.php');
 $ret = httpRequest('https://api.weixin.qq.com/sns/oauth2/access_token?appid=wx61b12b15f8cbb912&secret=' . SECRET . '&code=' . $_GET['code'] . '&grant_type=authorization_code');
-echo ('openid:<br/>' . base16_encode($ret['openid']));
+echo ('openid:<br/>' . $ret['openid']);
